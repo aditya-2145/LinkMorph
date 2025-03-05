@@ -1,1 +1,65 @@
-Its a URL Shortner which runs on local host
+LinkMorph - URL Shortener Web App
+
+LinkMorph is a full-stack URL shortener built using Node.js, Express, and MongoDB. It allows users to create, manage, and track shortened URLs while providing analytics for each link.
+
+Features
+✅ User Authentication – Secure login and registration for personalized dashboards
+✅ URL Shortening – Easily shorten long URLs and get shareable links
+✅ Click Analytics – Track the number of clicks for each shortened URL
+✅ User Dashboard – Each user can view and manage their own links
+✅ Responsive UI – Works seamlessly across all devices
+✅ Secure & Scalable – Designed to handle high traffic efficiently
+
+
+Tech Stack
+
+Frontend: EJS, HTML, CSS
+Backend: Node.js, Express.js
+Database: MongoDB
+Authentication: JWT (JSON Web Token)
+Other: Mongoose, Bcrypt.js
+
+Installation
+
+1. Clone the repository:
+git clone https://github.com/aditya-2145/LinkMorph.git
+cd LinkMorph
+
+2. Install dependencies:
+npm install
+
+3. Create a .env file and add the following variables:
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+BASE_URL=http://localhost:3000
+
+4. Start the server:
+npm start
+Open http://localhost:3000 in your browser.
+
+
+Project Structure
+/LinkMorph
+│── controllers/       # Business logic for URL handling & authentication
+│── middlewares/       # Auth middleware for protected routes
+│── models/            # MongoDB models (User, URL)
+│── routes/            # API routes
+│── services/          # Helper functions & utilities
+│── views/             # Frontend templates (EJS)
+│── connections.js     # Database connection setup
+│── index.js           # Entry point of the app
+│── package.json       # Dependencies & scripts
+│── .env.example       # Example environment variables
+│── README.md          # Project documentation
+
+
+Future Enhancements
+🚀 QR code generation for shortened links
+🚀 Custom URL aliasing feature
+🚀 Admin dashboard for monitoring usage
+
+Contributing
+Feel free to fork this repository, create a new branch, and submit a pull request with improvements!
+
+License
+This project is licensed under the MIT License.
